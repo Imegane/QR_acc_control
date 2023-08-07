@@ -7,26 +7,15 @@
 </head>
 <body>
     <script>
-    const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
+    const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
     
     var url = document.location.href;
-    var k = url.substr(url.lastIndexOf("k=")+2);
-    
-    if(k){
-      fetch(AS_URL_BASE+'?k='+k)
-      .then(r => r.text())
-      .then((r) => {
-        console.log(r);
-        //document.write(r);
-        if(r){
-          document.location.replace(r);
-        }
-      })
-      .catch(err => console.log(err))
-    }
-
+    var data = url.substr(url.lastIndexOf("?action=")+2);
+    var URL_WEBAPP_data= WEBAPP_BASE + data
+      console.log(URL_WEBAPP_data);
   </script>
+  
    <iframe src="https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec" style="border:none;"
-min-height="max-content" height="100%" width="100%"></iframe>
+min-height="max-content" height="1000" width="100%"></iframe>
 </body>
 </html>
