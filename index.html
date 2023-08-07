@@ -6,17 +6,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script>
+    <script type="text/javascript">
     const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
     
     var url = document.location.href;
     var data = url.substr(url.lastIndexOf("?action="));
-    var URL_WEBAPP_data= WEBAPP_BASE + data
+    var URL_WEBAPP_data= WEBAPP_BASE + data;
       console.log("new="+URL_WEBAPP_data);
-      return (URL_WEBAPP_data)
+      document.write("" + URL_WEBAPP_data + "");
   </script>
-  
-   <iframe src="https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec" style="border:none;"
+
+   <iframe src=
+     <script type="text/javascript">
+    const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
+    
+    var url = document.location.href;
+    var data = url.substr(url.lastIndexOf("?action="));
+    var URL_WEBAPP_data= WEBAPP_BASE + data;
+      console.log("new="+URL_WEBAPP_data);
+      document.write("" + URL_WEBAPP_data + "");
+  </script>
+     style="border:none;"
 min-height="max-content" height="1000" width="100%"></iframe>
 </body>
 </html>
