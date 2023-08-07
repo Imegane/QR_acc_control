@@ -13,20 +13,8 @@
     var data = url.substr(url.lastIndexOf("?action="));
     var URL_WEBAPP_data= WEBAPP_BASE + data;
       console.log("new="+URL_WEBAPP_data);
-      document.write("" + URL_WEBAPP_data + "");
-  </script>
-
-   <iframe src=
-     <script type="text/javascript">
-    const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
-    
-    var url = document.location.href;
-    var data = url.substr(url.lastIndexOf("?action="));
-    var URL_WEBAPP_data= WEBAPP_BASE + data;
-      console.log("new="+URL_WEBAPP_data);
-      document.write("" + URL_WEBAPP_data + "");
-  </script>
-     style="border:none;"
-min-height="max-content" height="1000" width="100%"></iframe>
+    document.write('<iframe src="'+ URL_WEBAPP_data +'" style="border:none;"  height="80vh" width="100%"></iframe>');
+   </script>               
+   
 </body>
 </html>
