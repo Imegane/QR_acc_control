@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="es" height="100%">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title></title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body height="100%">
+<body>
     <script type="text/javascript">
     const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
     
@@ -13,7 +13,7 @@
     var data = url.substr(url.lastIndexOf("?action="));
     var URL_WEBAPP_data= WEBAPP_BASE + data;
       console.log("new="+URL_WEBAPP_data);
-    document.write('<iframe src="'+ URL_WEBAPP_data +'" style="border:none;"  height="100vh" overflow="hidden" width="100%" ></iframe>');
+    document.write('<iframe src="'+ URL_WEBAPP_data +'" style="border:none;"  height="1000" width="100%" ></iframe>');
    </script>               
    
 </body>
