@@ -10,9 +10,10 @@
     const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
     
     var url = document.location.href;
-    var data = url.substr(url.lastIndexOf("?action=")+2);
+    var data = url.substr(url.lastIndexOf("?action="));
     var URL_WEBAPP_data= WEBAPP_BASE + data
-      console.log(URL_WEBAPP_data);
+      console.log("new="+URL_WEBAPP_data);
+      return (URL_WEBAPP_data)
   </script>
   
    <iframe src="https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec" style="border:none;"
