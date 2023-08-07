@@ -1,82 +1,20 @@
-<!doctype html>
-<html lang=''>
+  <!DOCTYPE html>
+<html lang="" style="padding: 0% 0%;">
 <head>
-   <meta charset='utf-8'>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-   <title> </title>
-
-   <style>
-   #contenedor {
-  width: 1500px;
-}
-#cabecera {
-}
-#menu {
-  float: left;
-  width: 225px;
-}
-#contenido {
-  float: left;
-  width: 400px;
-}
-#pie {
-  clear: both;
-}
-**// prueba
-.contenedor-responsive {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-.contenedor-responsive iframe,
-.contenedor-responsive object,
-.contenedor-responsive embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-</style>
-
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-<div id="contenedor">
-  <div id="cabecera">
-
-  </div>
- 
-  <div id="menu">
-  <div id='cssmenu'>
-
-</div>
-  
-
-  </div>
- 
-  <div id="contenido" class="contenedor-responsive">
+<body style="padding: 0% 0%;">
     <script type="text/javascript">
-        const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
-        
-        var url = document.location.href;
-        var data = url.substr(url.lastIndexOf("?action="));
-        var URL_WEBAPP_data= WEBAPP_BASE + data;
-          console.log("new="+URL_WEBAPP_data);
-        document.write('<iframe src="'+ URL_WEBAPP_data +'"  style="border:none"  height="1000" overflow="hidden" width="100%" ></iframe>');
-     </script>
-  </div>
- 
-  <div id="pie">
-  
-  </div>
-</div>
-
-
+    const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
+    
+    var url = document.location.href;
+    var data = url.substr(url.lastIndexOf("?action="));
+    var URL_WEBAPP_data= WEBAPP_BASE + data;
+      console.log("new="+URL_WEBAPP_data);
+    document.write('<iframe src="'+ URL_WEBAPP_data +'"  style="border:none"  height="1000" overflow="hidden" width="100%" ></iframe>');
+   </script>               
+   
 </body>
-<html>
+</html>
