@@ -10,8 +10,14 @@
     const WEBAPP_BASE = "https://script.google.com/macros/s/AKfycbxgzwN7EWAns_aYhBKcT9YoOLi-UfF8F_a3TF2pPD2q7xNctgsvSbwWmuElbrCdq5B1/exec";
     
     var url = document.location.href;
-    var data = url.substr(url.lastIndexOf("?action="));
-    var URL_WEBAPP_data= WEBAPP_BASE + data;
+    var data = url.substr(url.lastIndexOf("?action=")+8);
+      //desencripta os datos da url
+      var letras = data.split('');
+      var llaves = {'e': '@','f': 'A','g': 'B','h': 'C','i': 'D','j': 'E','k': 'F','l': 'G','m': 'H','n': 'I','o': 'J','p': 'K','q': 'L','r': 'M','s': 'N','t': 'O','u': 'P','v': 'Q','w': 'R','x': 'S','y': 'T','z': 'U','@': 'V','A': 'W','B': 'X','C': 'Y','D': 'Z','E': '.','F': 'a','G': 'b','H': 'c','I': 'd','J': 'e','K': 'f','L': 'g','M': 'h','N': 'i','O': 'j','P': 'k','Q': 'l','R': 'm','S': 'n','T': 'o','U': 'p','V': 'q','W': 'r','X': 's','Y': 't','Z': 'u','.': 'v','a': 'w','b': 'x','c': 'y','d': 'z' };
+      var cifrado = letras.map( letra => llaves[letra] ? llaves[letra] : letra).join('');
+      Logger.log(cifrado)
+      // crea url do script de google + datos 
+    var URL_WEBAPP_data= WEBAPP_BASE +"?action="+ cifrado;
       console.log("new="+URL_WEBAPP_data);
     document.write('<iframe src="'+ URL_WEBAPP_data +'"  style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" ></iframe>');
    </script>               
