@@ -13,7 +13,7 @@
     var data = url.substr(url.lastIndexOf("?action="));
     var URL_WEBAPP_data= WEBAPP_BASE + data;
       console.log("new="+URL_WEBAPP_data);
-    document.write('<iframe src="'+ URL_WEBAPP_data +'"  style="border:none"  height="1000" overflow="hidden" width="100%" ></iframe>');
+    document.write('<iframe src="'+ URL_WEBAPP_data +'"  style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" ></iframe>');
    </script>               
    
 </body>
